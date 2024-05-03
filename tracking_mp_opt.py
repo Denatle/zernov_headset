@@ -11,7 +11,7 @@ hands = mp_hands.Hands(static_image_mode=False,
 mp_draw = mp.solutions.drawing_utils
 
 segmentor = SelfiSegmentation()
-class controller():
+class Controller():
     def remove_background(self,img):
         try:
             gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
