@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 segmentor = SelfiSegmentation()  # remove background
 hand_detector = HandDetector()
 
-class controller():
+class Controller():
 
     def remove_background(self,img):
         gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
