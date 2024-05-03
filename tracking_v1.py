@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 segmentor = SelfiSegmentation()
 
-class controller():
+class Controller():
     def __init__(self, mode=True, maxHands=1, modelComplex=2, detectionCon=0.7, trackCon=0.5):
         self.mode = mode
         self.maxHands = maxHands
