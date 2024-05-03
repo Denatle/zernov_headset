@@ -193,7 +193,7 @@ def video_writer():
     while True:
         out.write(right_postprocess_image)
 
-detector = tracking.controller()
+detector = tracking.Controller()
 gui_machine = gui.gui_machine()
 out = cv2.VideoWriter("Recording_" + time.strftime("%d.%m.%Y_%H.%M.%S", time.localtime()) + ".avi",cv2.VideoWriter_fourcc(*"MJPG"), 25, (1480,1440))
                       
